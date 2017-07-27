@@ -1,0 +1,12 @@
+default:
+    suites:
+        default:
+            contexts:
+                - MainContext
+    extensions:
+        Behat\MinkExtension:
+            base_url: http://localhost/behattest/
+            sessions:
+                default: 
+                    selenium2: ~
+            browser_name: chrome
